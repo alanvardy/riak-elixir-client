@@ -1,12 +1,12 @@
-use Mix.Config
+import Config
 
-config :pooler, pools:
-  [
+config :pooler,
+  pools: [
     [
       name: :riaklocal,
       group: :riak,
       max_count: 10,
       init_count: 5,
-      start_mfa: { Riak.Connection, :start_link, [] }
+      start_mfa: {Riak.Connection, :start_link, []}
     ]
   ]

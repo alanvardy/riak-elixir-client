@@ -23,7 +23,7 @@ defmodule Riak.Mixfile do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:earmark, ">= 0.0.0", only: :dev},
-      {:pooler, "~> 1.5.3"},
+      {:pooler, "~> 1.6"},
       {:riakc, github: "basho/riak-erlang-client", tag: "3.0.13"}
     ]
   end
